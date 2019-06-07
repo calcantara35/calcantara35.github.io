@@ -1,297 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/* Beginning of Style Sheet*/
 body {
-    margin: 0rem;
-    padding: 0rem;
-    background-color: #19181d;
-
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
 }
 
-
-/* NAVBAR STYLE */
-
-/* Nav Scrolling Offset */
+/*--- Nav Scrolling Offset --*/
 .offset:before {
-    height: 4rem;
-    margin-top: -4rem;
-    content: "";
-    display: block;
+  height: 4rem;
+  margin-top: -4rem;
+  content: "";
+  display: block;
 }
 
-/* Extra Bootstrap Column Padding */
-
+/*--- Extra Bootstrap Column Padding --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
+
+/*============= NAVIGATION =============*/
 
 .navbar {
-    padding: .7rem 2rem;
-    text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 700;
-    letter-spacing: .1rem;
-    transition: background-color .5 ease 0s; /* transition (transparent - solid */
+  padding: .7rem 1rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
 }
-
-.navbar.always-solid {
-    background: rgba(0, 0, 0, 0.7)!important;
-  }
-
-.svg-inline--fa.fa-w-14 { /* class for custom hamburger icon */
-    color: black;
-    font-size: 1.6rem;
+.navbar-brand img {
+  height: 2rem;
 }
-
-.svg-inline--fa.fa-w-14.whiteHamIcon {
-    color: white;
-    font-size: 1.6rem;
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
 }
-
 .navbar-nav li {
-    padding-right: .8rem;
+  padding-right: .8rem;
 }
-
 .navbar-nav .nav-link {
-    color: black;
-    padding-top: .8rem;
+  color: white;
+  padding-top: .8rem;
 }
-
-.navbar-nav .nav-link.active, /* this is to make the top links colored and activate on hover */
-.navbar-nav .nav-link:hover { 
-    color: lightblue;
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: skyblue;
 }
-
 .navbar.solid {
-    background: rgba(0, 0, 0, 0.7) !important;
-    transition: background-color 1s ease 0s; /* transition (solid - transparent) */
-}
-.nav-link.whiteText {
-    color: white;
+  background: rgba(0, 0, 0, 0.7)!important;
+  transition: background-color 1s ease 0s;
 }
 
+/*============= LANDING PAGE =============*/
 
-/* LANDING PAGE CONTENTS */
-
-.circle { /*dark circle initial */
-    height: 25rem;
-    width: 25rem;
-    border-radius: 50%;
-    background: linear-gradient(#313247 0%, #19181d 30%);
-    position: absolute;
-    top: 20%;
-    left: 35%;
+.home-inner {
+  background-image: url('imgs/fixedImage2.jpg');
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+}
+.caption h1 {
+  color: white;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 2rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block!important;
 }
 
-.circle::before, /*darker pink circle */
-.circle::after {
-    content: '';
-    height: 25rem;
-    width: 25rem;
-    background: linear-gradient(#ffd1da 0%, lightblue 5%, #2d2133 25%);
-    border-radius: 50%;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-filter: blur(0.4375rem);
-    z-index: -1;
-}
-.circle::after { /*top radius*/
-    width: 25.9375rem;
-    top: 35%;
-    -webkit-filter: blur(0.875rem);
-    opacity: .3;
-}
-
-.message {
-    font-family: sans-serif;
-    font-size: 1.25rem;
-    color: white;
-    letter-spacing: 2.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.notifymsg {
-    font-family: sans-serif;
-    font-size: 1.4rem;
-    color: #ffd1da;
-    letter-spacing: .23rem;
-    position: absolute;
-    bottom: 17%; /*raises it 17% from the bottom of the page */
-    left: 49.5%; /*makes it center to the entire page */
-    transform: translate(-50%, -50%)
-}
-.field {
-    position: absolute;
-    bottom: 8%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.field button{
-    height: 3.1875rem;
-    width: 9.25rem;
-    background-color: #2e2d3b;
-    font-family: sans-serif;
-    font-size: .9rem;
-    color: white;
-    letter-spacing: 0.0625rem;
-    border: none;
-    outline: none;
-    border-radius: 2.1875rem;
-    position: absolute;
-    bottom: 1rem;
-    left: -5.05rem;
-    z-index: 999;
-
-}
-
-/* END OF LANDING PAGE CONTENTS */
 
 
+/*============= MEDIA QUERIES =============*/
 
-/*--- MEDIA QUERIES ---*/
-
-/* Devices under 992px (lg) screen */
-
+/* Devices under 992px (lg) */
 @media (max-width: 991px) {
-    .circle { /*dark circle initial */
-        height: 25rem;
-        width: 25rem;
-        border-radius: 50%;
-        top: 21%;
-        left: 23%;
+    .caption h1 {
+      font-size: 3.5rem;
+      letter-spacing: .2rem;
+      padding-bottom: .8rem;
     }
-    .message {
-        letter-spacing: .9rem;;
-        font-size: 1.6rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
+    .caption h3 {
+      font-size: 2.2rem;
+      padding-bottom: 1.7rem;
     }
-    .notifymsg {
-        letter-spacing: .2rem;
-        font-size: 1.2rem;
-        position: absolute;
-        bottom: 20%;
-        left: 49%;
-        transform: translate(-50%, -50%);
+    .btn-lg {
+      padding: .7rem 1.2rem;
+      font-size: 1rem;
     }
-    .field {
-        bottom: 8%;
-        left: 53%;
-        transform: translate(-50%);
+  }
+  
+  /* Devices under 768px (md) */
+  @media (max-width: 767px) {
+    .caption h1 {
+      font-size: 2.7rem;
+      letter-spacing: .15rem;
+      padding-bottom: .5rem;
     }
-    .field button{
-        height: 2.35rem;
-        width: 6.25rem;
-        align-content: center;
-        font-size: 0.6875rem;
-        color: white;
-        letter-spacing: .1rem;
-        border-radius: 2.1875rem;
-        position: absolute;
-        bottom: 4rem;
-        left: -5rem;
-        z-index: 999;
-       
-    
+    .caption h3 {
+      font-size: 1.7rem;
+      padding-bottom: 1.2rem;
     }
-}
-
-/* Devices under 768px (md) screen */
-
-@media (max-width: 767px) {
-    .circle { /*dark circle initial */
-        height: 25rem;
-        width: 25rem;
-        border-radius: 50%;
-        top: 21%;
-        left: 21.4%;
+    .btn-lg {
+      padding: .6rem 1.1rem;
+      font-size: 1rem;
     }
-    .message {
-        letter-spacing: .75rem;;
-        font-size: 1.6rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
-    .notifymsg {
-        letter-spacing: .2rem;
-        font-size: .9rem;
-        position: absolute;
-        bottom: 25%;
-        left: 49%;
-        transform: translate(-50%, -50%);
-    }
-    .field {
-        bottom: 8%;
-        left: 53%;
-        transform: translate(-50%);
-    }
-    .field button{
-        height: 2.35rem;
-        width: 6.25rem;
-        align-content: center;
-        font-size: 0.6875rem;
-        color: white;
-        letter-spacing: .1rem;
-        border-radius: 2.1875rem;
-        position: absolute;
-        bottom: 1.4rem;
-        left: -4.6rem;
-        z-index: 999;
-       
-    
-    }
-    
-}
-
-/* Devices under 576px (sm) screen */
-
-@media (max-width: 575px) {
-    .circle { /*dark circle initial */
-        height: 25rem;
-        width: 25rem;
-        border-radius: 50%;
-        top: 21%;
-        left: 10%;
-    }
-    .message {
-        letter-spacing: .621rem;
-        font-size: 1rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
-    .notifymsg {
-        letter-spacing: .2rem;
-        font-size: .9rem;
-        position: absolute;
-        bottom: 25%;
-        left: 49%;
-        transform: translate(-50%, -50%);
-    }
-    .field {
-        bottom: 8%;
-        left: 53%;
-        transform: translate(-50%);
-    }
-    .field button{
-        height: 2rem;
-        width: 6rem;
-        align-content: center;
-        font-size: 0.53rem;
-        color: white;
-        letter-spacing: .1rem;
-        position: absolute;
-        bottom: 6rem;
-        left: -4.6rem;
-        z-index: 999;
-       
-    
+  }
+  
+  /* Devices under 576px (sm) */
+  @media (max-width: 575px) {
+    .home-inner {
+        background: url('imgs/fixedImage2-mobile.png');
     }
 
-    
-}
+    .caption h1 {
+      font-size: 1.9rem;
+      letter-spacing: .1rem;
+      padding-bottom: .4rem;
+    }
+    .caption h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+    .btn-lg {
+      padding: .4rem .9rem;
+      font-size: .9rem;
+    }
+  }
+  
+  
+  /*============ BOOTSTRAP BREAK POINTS:
+  
+  Extra small (xs) devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+  
+  Small (sm) devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+  
+  Medium (md) devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+  
+  Large (lg) devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  Extra (xl) large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  
+  =============*/
+  
