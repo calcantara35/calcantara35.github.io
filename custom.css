@@ -117,7 +117,7 @@ body {
   /* Devices under 768px (md) */
   @media (max-width: 767px) {
     .home-inner {
-        background: url('imgs/fixedImage2-mobile.png');
+        background-image: url('imgs/fixedImage2-mobile.png');
     }
     .caption h1 {
       font-size: 2.7rem;
@@ -137,7 +137,7 @@ body {
   /* Devices under 576px (sm) */
   @media (max-width: 575px) {
     .home-inner {
-        background: url('imgs/fixedImage2-mobile.png');
+        background-image: url('imgs/fixedImage2-mobile.png');
     }
 
     .caption h1 {
