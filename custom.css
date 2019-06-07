@@ -304,7 +304,7 @@ and (max-device-width : 667px) {
         width: 20rem;
         border-radius: 50%;
         top: 21%;
-        left: 10%;
+        left: 9%;
     }
 
     .circle::before, /*darker pink circle */
@@ -328,8 +328,8 @@ and (max-device-width : 667px) {
     opacity: .3;
 }
     .message {
-        letter-spacing: .621rem;
-        font-size: 1rem;
+        letter-spacing: .5rem;
+        font-size: .8rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%)
@@ -355,7 +355,7 @@ and (max-device-width : 667px) {
         color: white;
         letter-spacing: .1rem;
         position: absolute;
-        bottom: 6rem;
+        bottom: 4rem;
         left: -4.6rem;
         z-index: 999;
        
