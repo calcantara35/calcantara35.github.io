@@ -56,7 +56,7 @@ body {
 /*============= LANDING PAGE =============*/
 
 .home-inner {
-  background-image: url('imgs/fixedImage2-mobile.png') cover no-repeat;
+  background-image: url('imgs/fixedImage2-mobile.png');
 }
 .caption {
   width: 100%;
@@ -98,9 +98,7 @@ body {
 
 /* Devices under 992px (lg) */
 @media (max-width: 991px) {
-  .home-inner {
-    background-image: url('imgs/fixedImage2-mobile.png');
-}
+  
     .caption h1 {
       font-size: 3.5rem;
       letter-spacing: .2rem;
@@ -118,9 +116,7 @@ body {
   
   /* Devices under 768px (md) */
   @media (max-width: 767px) {
-    .home-inner {
-        background-image: url('imgs/fixedImage2-mobile.png');
-    }
+
     .caption h1 {
       font-size: 2.7rem;
       letter-spacing: .15rem;
@@ -138,9 +134,7 @@ body {
   
   /* Devices under 576px (sm) */
   @media (max-width: 575px) {
-    .home-inner {
-        background-image: url('imgs/fixedImage2-mobile.png');
-    }
+  
 
     .caption h1 {
       font-size: 1.9rem;
