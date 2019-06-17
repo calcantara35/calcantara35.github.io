@@ -56,7 +56,7 @@ body {
 /*============= LANDING PAGE =============*/
 
 .home-inner {
-  background-image: url('imgs/fixedImage2.jpg') cover no-repeat;
+  background-image: url('imgs/fixedImage2-mobile.png') cover no-repeat;
   width: cover;
 }
 .caption {
